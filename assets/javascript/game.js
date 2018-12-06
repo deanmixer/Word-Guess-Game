@@ -30,6 +30,8 @@
             wins++;
             document.querySelector("#score").innerHTML = wins;
             document.querySelector("#clue").innerHTML = "Press any key to play again!"; 
+            document.querySelector("#word").classList.add("correct");  
+            document.getElementById("bigWin").play(); 
         }
     }
 
@@ -40,7 +42,8 @@
             for(i = 0; i < wordEval.length; i++) {
                 document.querySelector("#word").innerHTML += wordEval[i] + " ";                   
                 };
-            document.querySelector("#word").classList.add("incorrect");    
+            document.querySelector("#word").classList.add("incorrect");  
+            document.getElementById("bigLose").play(); 
         }
     }
 
@@ -72,7 +75,7 @@
         correctGuesses = [];
         incorrectGuesses = [];
         updateHangman(); 
-        document.querySelector("#word").classList.remove("incorrect");  
+        document.querySelector("#word").classList.remove("incorrect", "correct");  
         document.querySelector("#remaining").innerHTML = guessRemain; 
         document.querySelector("#guessed").innerHTML = "None"; 
         document.querySelector("#clue").innerHTML = "Good luck!"; 
