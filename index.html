@@ -20,12 +20,20 @@
     <h2 id="clue">Press any letter to get started!</h2>
     <p>Wins</p>
         <p id="score">0</p>
-    <p>Current Word</p>
-        <p id="word"></p>
-    <p>Number of guesses remaining</p>
-        <p id="remaining">12</p>
-    <p>Letters already guessed</p>
-        <p id="guessed">None</p>
+    <div id="box">
+        <p>Current Word</p>
+            <p id="word"></p>
+        <div class="flexparent">
+            <div class="flexchild">
+                <p>Guesses remaining</p>
+                <p id="remaining">12</p>            
+            </div>
+            <div class="flexchild">
+                <p>Letters guessed</p>
+                <p id="guessed">None</p>            
+            </div>
+        </div>
+    </div>
 </div>
 <audio id="bigLose" src="assets/sounds/losing-horn.mp3" preload="auto"></audio>
 <audio id="bigWin" src="assets/sounds/win-yeah.mp3" preload="auto"></audio>

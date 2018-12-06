@@ -21,7 +21,7 @@ h1 {
 }
 
 .maincontent {
-    margin: 2% 20% 2% 20%;
+    margin: 2% 15% 2% 15%;
     background-color: #DCDBE6;
     opacity: 0.8;
     /* margin-top: 15px;
@@ -30,10 +30,16 @@ h1 {
     text-align: center;
 }
 
+#box {
+    border: 2px solid black;
+    margin-top: 25px;
+    padding: 5px 0px 5px 0px;
+}
+
 h2 {
     font-family: 'Sedgwick Ave', cursive;
     font-size: 2em;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-top: 2%;
     font-weight: bold;   
 }
@@ -41,21 +47,39 @@ h2 {
 p {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.5em;
-    line-height: 2em;    
+    line-height: 1.7em;    
 }
 
 .incorrect {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.5em;
-    line-height: 2em; 
+    line-height: 1.7em; 
     color: red;   
 }
 
 .correct {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.5em;
-    line-height: 2em; 
+    line-height: 1.7em; 
     color: green;   
+}
+
+.flexparent {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-start;
+}
+
+.flexchild {
+    position: relative;
+    max-width: 300px;
+    width: 40%;
+/*    border: 2px solid black;
+    padding: 0px 20px 0px 10px;
+    margin: 0px 5px 0px 5px;*/
 }
 
 @media only screen and (max-width: 980px) {
@@ -64,36 +88,53 @@ p {
 
 @media only screen and (max-width: 768px) {
 	.maincontent {
-        margin: 2% 10% 2% 10%;
+        margin: 2% 8% 2% 8%;
     }
-
+    .flexchild {
+    width: 100%;
+    }
+    h2 {
+        margin-bottom: 15px; 
+    }
+        .flexparent {
+    margin-top: 10px;
+    }
+}
 
 @media only screen and (max-width: 640px) {
 	.maincontent {
         margin: 4%;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 2.7em;
     }
     h2 {
-        font-size: 1.4em;  
+        font-size: 1.6em;
     }
     p {
-        font-size: 1.2em;
-        line-height: 1.8em;    
+        font-size: 1.4em;
+        line-height: 1.5em;    
     }
     .incorrect {
-        font-size: 1.2em;
-        line-height: 1.8em;    
+        font-size: 1.4em;
+        line-height: 1.5em;    
         color: red;
     }
     .correct {
-        font-size: 1.2em;
-        line-height: 1.8em;    
+        font-size: 1.4em;
+        line-height: 1.5em;    
         color: green;
     }
     body {
          background-size: auto 250%;       
     }
-}
+    .flexparent {
+    margin-top: 10px;
+    }
+    #box {
+    margin-top: 10px;
+    border-width: 1px 0px 0px 0px; 
+    border-style: solid;
+    border-color: black;
+    }
 }
