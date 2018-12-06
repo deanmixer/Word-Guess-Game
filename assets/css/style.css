@@ -1,0 +1,82 @@
+body {
+    background-image: url("../images/background2.jpg");
+    background-size: auto 200%;
+    background-color: #dcab5b;
+}
+
+header {
+    margin: 0% 0% 2% 0%;
+    background-color: black;
+    opacity: 0.8;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    color: white;
+}
+
+.maincontent {
+    margin: 2% 20% 2% 20%;
+    background-color: #DCDBE6;
+    opacity: 0.8;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 2em;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-weight: bold;   
+}
+
+p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    line-height: 2em;    
+}
+
+.incorrect {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    line-height: 2em; 
+    color: red;   
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+	.maincontent {
+        margin: 2% 10% 2% 10%;
+    }
+
+
+@media only screen and (max-width: 640px) {
+	.maincontent {
+        margin: 4%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.4em;  
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.8em;    
+    }
+    body {
+         background-size: auto 250%;       
+    }
+}
+}
